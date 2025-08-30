@@ -1,0 +1,285 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.app-container {
+  width: 100vw;
+  background-color: #9ba9eb;
+  min-height: 100vh;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  width: 180px;
+  margin-left: 65px;
+  align-self: flex-start;
+}
+.adding-new-password {
+  background-color: #5763a5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 20px;
+  width: 90%;
+  margin: 50px;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+.form {
+  background-color: #454f84;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+@media (max-width: 767px) {
+  .form {
+    width: 100%;
+    margin-top: 16px;
+  }
+}
+.adding-heading {
+  color: #f8fafc;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.img {
+  height: 50px;
+  background-color: #f8fafc;
+  padding: 8px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.input {
+  width: 350px;
+  height: 50px;
+  background-color: #f8fafc;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  font-size: 16px;
+  font-family: 'Roboto';
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  border-color: #c3caea;
+}
+.input-div {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 20px;
+  align-items: center;
+}
+
+.password-manager {
+  width: 350px;
+  height: 350px;
+}
+@media (max-width: 767px) {
+  .background-img {
+    order: -1;
+  }
+}
+.button {
+  text-align: right;
+  margin-top: 20px;
+}
+.add-btn {
+  height: 40px;
+  width: 80px;
+  background-color: #0b69ff;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Roboto';
+  color: #f8fafc;
+  font-size: 16px;
+  text-align: center;
+}
+.password-list {
+  background-color: #5763a5;
+  border-radius: 20px;
+  width: 90%;
+
+  padding: 10px;
+  flex-wrap: wrap;
+}
+.password-heading {
+  color: #f8fafc;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 500;
+}
+.password-heading span{
+  color: #f8fafc;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 400;
+  border-style: solid;
+  border-color: #c3caea;
+  border-width: 1px;
+  border-radius: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding: 3px;
+}
+.password {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-div {
+  flex-shrink: 1;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+.search-img {
+  max-width: 30px;
+  background-color: #f8fafc;
+  padding: 8px;
+  border-top-left-radius: 1px;
+  border-bottom-left-radius: 1px;
+  border: none;
+}
+.search-input {
+  min-width: 200px;
+  max-width: 350px;
+  height: 30px;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+  font-size: 16px;
+  font-family: 'Roboto';
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  border-color: #c3caea;
+  background-color: #f8fafc;
+}
+hr {
+  height: 1px;
+  color: #c3caea;
+  border-style: solid;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.password-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.no-pass-img {
+  width: 280px;
+  margin: 20px;
+}
+.no-pass-text {
+  color: #f8fafc;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 500;
+}
+.show-pass-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+.checkbox {
+  border: none;
+  width: 20px;
+  height: 20px;
+  outline: none;
+  cursor: pointer;
+  background-color: #f8fafc;
+}
+.show-pass-div label {
+  color: #f8fafc;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 400;
+}
+.passwords {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.ul {
+  list-style-type: none;
+}
+.password-card {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 6px;
+  border-color: #c3caea;
+  min-width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  padding-top: 30px;
+}
+.website-letter-img {
+  height: 60px;
+  width: 60px;
+  font-size: 36px;
+  color: #f8fafc;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text {
+  color: #f8fafc;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Roboto';
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: -20px;
+}
+.text p,
+img {
+  margin-top: -6px;
+}
+.delete {
+  background-color: transparent;
+
+  border: none;
+}
+.delete-btn {
+  height: 30px;
+  width: 30px;
+}
+.pass-image {
+  width: 100px;
+  margin-top: 0px;
+}
