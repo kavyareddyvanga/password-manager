@@ -226,13 +226,11 @@ hr {
 
 .checkbox {
   border: none;
-  width: 20px;
-  height: 20px;
+  width: 60px;
+  height: 60px;
   outline: none;
   cursor: pointer;
- 
-  accent-color:#f8fafc ;
-  
+  accent-color:#f8fafc;
 }
 
 
