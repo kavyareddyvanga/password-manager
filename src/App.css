@@ -224,13 +224,15 @@ hr {
   margin-right: 50px;
 }
 
-.checkbox {
+.checkBox {
   border: none;
   width: 20px;
   height: 20px;
   outline: none;
   cursor: pointer;
-  accent-color:#f8fafc;
+ 
+  accent-color:#f8fafc ;
+  
 }
 
 
@@ -256,16 +258,22 @@ hr {
   border-width: 1px;
   border-radius: 6px;
   border-color: #c3caea;
-  min-width: 300px;
+  width: 300px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   padding-top: 30px;
 }
+@media(max-width:767px){
+  .password-card{
+  width:100%;
+  }
+}
 .website-letter-img {
-  height: 60px;
-  width: 60px;
+  height: 45px;
+  width: 45px;
+  padding: 10px;
   font-size: 36px;
   color: #f8fafc;
   border-radius: 50px;
@@ -279,6 +287,7 @@ hr {
   align-items: center;
 }
 .text {
+  flex-shrink: 1;
   color: #f8fafc;
   font-size: 16px;
   font-weight: 600;
@@ -293,9 +302,11 @@ hr {
 img {
   margin-top: -6px;
 }
+.button-container{
+  flex-shrink: 1;
+}
 .delete {
   background-color: transparent;
-
   border: none;
 }
 .delete-btn {
