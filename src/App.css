@@ -299,6 +299,9 @@ hr {
   flex-direction: column;
   justify-content: center;
   gap: -20px;
+  word-wrap: break-word; 
+  overflow-wrap: break-word;
+  max-width: 160px;
    
 }
 .text p,
