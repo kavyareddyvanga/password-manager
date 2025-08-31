@@ -157,6 +157,9 @@ body {
   .password-heading{
     font-size: 16px;
   }
+  .text{
+    max-width: 120px;
+  }
 }
 
 .password-heading span{
@@ -317,7 +320,7 @@ hr {
   gap: -20px;
   word-wrap: break-word; /* wraps long text */
   overflow-wrap: break-word;
-  max-width: 160px;
+  
    
 }
 .text p,
