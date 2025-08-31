@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
 }
@@ -10,13 +11,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .app-container {
   width: 100vw;
   background-color: #9ba9eb;
   min-height: 100vh;
-  padding: 10px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 10px 10px 40px 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -28,6 +28,7 @@ body {
   margin-left: 65px;
   align-self: flex-start;
 }
+
 .adding-new-password {
   background-color: #5763a5;
   display: flex;
@@ -36,12 +37,11 @@ body {
   align-items: center;
   border-radius: 20px;
   width: 90%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0;
   padding: 30px;
   flex-wrap: wrap;
-  
 }
+
 .form {
   background-color: #454f84;
   border-radius: 20px;
@@ -57,6 +57,7 @@ body {
     margin-top: 16px;
   }
 }
+
 .adding-heading {
   color: #f8fafc;
   font-family: 'Roboto';
@@ -71,8 +72,8 @@ body {
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
 }
+
 .input {
-  
   color: #64748b;
   width: 100%;
   height: 50px;
@@ -86,15 +87,16 @@ body {
   border-bottom: none;
   border-color: #c3caea;
 }
+
 .input-div {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
   align-items: center;
+  margin-top: 20px;
 }
 
-.background-img{
-  width:50%;
+.background-img {
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,32 +104,19 @@ body {
 @media (max-width: 767px) {
   .background-img {
     width: 100%;
-    
-  }
-  .password{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .search-div{
-    width: 280px;
-  }
-}
-.password-manager {
-  width: 280px;
-  
-}
-@media (max-width: 767px) {
-  .background-img {
     order: -1;
   }
 }
+
+.password-manager {
+  width: 280px;
+}
+
 .button {
   text-align: right;
   margin-top: 20px;
 }
+
 .add-btn {
   height: 40px;
   width: 80px;
@@ -139,13 +128,14 @@ body {
   font-size: 16px;
   text-align: center;
 }
+
 .password-list {
   background-color: #5763a5;
   border-radius: 20px;
   width: 90%;
   padding: 10px;
-  
 }
+
 .password-heading {
   color: #f8fafc;
   font-family: 'Roboto';
@@ -153,53 +143,56 @@ body {
   font-weight: 500;
   flex-shrink: 1;
 }
-@media (max-width:767px) {
-  .password-heading{
-    font-size: 16px;
-  }
-  .text{
-    max-width: 120px;
-  }
-}
-
-.password-heading span{
+.password-heading span {
   color: #f8fafc;
   font-family: 'Roboto';
   font-size: 18px;
   font-weight: 400;
-  border-style: solid;
-  border-color: #c3caea;
-  border-width: 1px;
+  border: 1px solid #c3caea;
   border-radius: 10px;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding: 3px;
+  padding: 3px 8px;
 }
+
 .password {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: 0 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
+@media (max-width: 767px) {
+  .password-heading {
+    font-size: 16px;
+  }
+  .text {
+    max-width: 120px; 
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  .password {
+    margin: 0 10px;
+    justify-content: center;
+  }
+  hr {
+    margin:  10px;
+  }
+}
+
 .search-div {
-  flex-shrink: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .search-img {
   max-width: 30px;
   background-color: #f8fafc;
   padding: 8px;
-  border-top-left-radius: 1px;
-  border-bottom-left-radius: 1px;
+  border-radius: 0 0 0 0;
   border: none;
 }
+
 .search-input {
-  width: 80%;
-  
   height: 30px;
   border-top-right-radius: 1px;
   border-bottom-right-radius: 1px;
@@ -210,14 +203,20 @@ body {
   border-bottom: none;
   border-color: #c3caea;
   background-color: #f8fafc;
+  
 }
+
 hr {
   height: 1px;
   color: #c3caea;
   border-style: solid;
-  margin-left: 50px;
-  margin-right: 50px;
 }
+@media (min-width: 768px) {
+  hr {
+    margin: 0 50px;
+  }
+}
+
 .password-result {
   display: flex;
   flex-direction: column;
@@ -225,35 +224,33 @@ hr {
   align-items: center;
   padding: 30px;
 }
+
 .no-pass-img {
   width: 280px;
   margin: 20px;
 }
+
 .no-pass-text {
   color: #f8fafc;
   font-family: 'Roboto';
   font-size: 24px;
   font-weight: 500;
 }
+
 .show-pass-div {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: flex-end;
   margin-right: 50px;
 }
 
-.checkBox {
+.checkbox {
   border: none;
   width: 20px;
   height: 20px;
-  outline: none;
   cursor: pointer;
- 
-  accent-color:#f8fafc ;
-  
+  accent-color: #f8fafc;
 }
-
 
 .show-pass-div label {
   color: #f8fafc;
@@ -261,87 +258,95 @@ hr {
   font-size: 18px;
   font-weight: 400;
 }
+
 .passwords {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
   flex-wrap: wrap;
   gap: 20px;
 }
+
 .ul {
   list-style-type: none;
 }
+
 .password-card {
-  border-style: solid;
-  border-width: 1px;
+  border: 1px solid #c3caea;
   border-radius: 6px;
-  border-color: #c3caea;
-  width: 300px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  padding-top: 30px;
+  padding: 15px;
   overflow: hidden;
+  flex-wrap: nowrap; 
 }
-@media(max-width:767px){
-  .password-card{
-  width:100%;
-  }
+
+.info {
+  display: flex;
+  flex: 1 1 auto; 
+  gap: 10px;
+  align-items: center;
+  min-width: 0; 
 }
+
+.text {
+  flex: 1 1 auto;
+  min-width: 0; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  color: #f8fafc;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Roboto';
+  overflow-wrap: break-word; /* wraps long text */
+}
+
+.button-container {
+  flex-shrink: 0; /* delete button stays visible */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .website-letter-img {
   height: 45px;
   width: 45px;
   padding: 10px;
   font-size: 36px;
   color: #f8fafc;
-  border-radius: 50px;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.info {
-  display: flex;
-  flex-shrink: 1;
-  gap:10px;
-  align-items: center;
-}
-.text {
- 
-  color: #f8fafc;
-  font-size: 16px;
-  font-weight: 600;
-  font-family: 'Roboto';
-  margin-left: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: -20px;
-  word-wrap: break-word; /* wraps long text */
-  overflow-wrap: break-word;
-  
-   
-}
+
+
+
+
+
 .text p,
 img {
   margin-top: -6px;
 }
-.button-container{
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
+
+
 .delete {
   background-color: transparent;
   border: none;
 }
+
 .delete-btn {
   height: 30px;
   width: 30px;
 }
+
 .pass-image {
   width: 100px;
-  margin-top: 0px;
+  margin-top: 0;
 }
+
+
